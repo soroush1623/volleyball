@@ -12,7 +12,11 @@
             align-items: center;
             justify-content: center;
             width: 100vw;
-            min-height: 100%;
+            height: 100%;
+            background-image: url(./volleyball-nawpic-2.jpg);
+            background-size:100vh;
+            background-repeat: no-repeat;
+            background-position-x: 50%;
         }
         .container{
             display: flex;
@@ -23,9 +27,12 @@
             margin: 2rem;
             background-color: gray;
             align-items: center;
+            opacity: 0.8;
+            border-radius: 1rem;
         }
         .vs{
-            margin-top: -5rem
+            margin-top: -5rem;
+            font-size: 2rem;
         }
         .team_one{
             display: flex;
@@ -36,6 +43,7 @@
             margin: 0 1rem;
             align-items: center;
            justify-content: space-around;
+           font-size: 3rem;
 
         }
         .team_two{
@@ -47,6 +55,23 @@
             margin: 0 1rem;
             align-items: center;
            justify-content: space-around;
+           font-size: 3rem;
+        }
+        .btn_1{
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 3rem;
+            background-color: blue;
+            border: none;
+            font-weight: bold;
+        }
+        .btn_2{
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 3rem;
+            background-color: blue;
+            border: none;
+            font-weight: bold;
         }
 
     </style>
@@ -55,12 +80,12 @@
     <div class="container">
         <div class="team_one">
             <h1 class="team_one_number">0</h1>
-            <button class="btn_1">add score</button>
+            <button class="btn_1">score</button>
         </div>
         <p class="vs">:</p>
         <div class="team_two">
             <h1 class="team_two_number">0</h1>
-            <button class="btn_2">add score</button>
+            <button class="btn_2">score</button>
         </div>
     </div>
     
