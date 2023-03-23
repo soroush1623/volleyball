@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>volleyball</title>
+    <link rel="stylesheet" href="./css reset.css">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            min-height: 100%;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 10rem;
+            justify-content: center;
+            margin: 2rem;
+            background-color: gray;
+            align-items: center;
+        }
+        .vs{
+            margin-top: -5rem
+        }
+        .team_one{
+            display: flex;
+            justify-content: center;
+            flex-direction: column; 
+            height: 100%;
+            width: 50%;
+            margin: 0 1rem;
+            align-items: center;
+           justify-content: space-around;
+
+        }
+        .team_two{
+            display: flex;
+            justify-content: center;
+            flex-direction: column; 
+            height: 100%;
+            width: 50%;
+            margin: 0 1rem;
+            align-items: center;
+           justify-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="team_one">
+            <h1 class="team_one_number">0</h1>
+            <button class="btn_1">add score</button>
+        </div>
+        <p class="vs">:</p>
+        <div class="team_two">
+            <h1 class="team_two_number">0</h1>
+            <button class="btn_2">add score</button>
+        </div>
+    </div>
+    
+    <script>
+        let counter_1 = document.querySelector('.btn_1');
+        let number_1 = 1
+        let counter_2 = document.querySelector('.btn_2');
+        let number_2 = 1
+        counter_1.addEventListener('click', function count (){
+            score_1 = number_1++;
+            console.log(score_1);
+            document.querySelector('.team_one_number').innerHTML = score_1;
+        })
+        counter_2.addEventListener('click', function count (){
+            score_2 = number_2++;
+            console.log(score_2);
+            document.querySelector('.team_two_number').innerHTML = score_2;
+        })
+    </script>
+</body>
+</html>
