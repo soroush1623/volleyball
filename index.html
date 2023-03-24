@@ -91,6 +91,7 @@
         </div>
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         let counter_1 = document.querySelector('.btn_1');
         let number_1 = 1
@@ -100,11 +101,17 @@
             score_1 = number_1++;
             console.log(score_1);
             document.querySelector('.team_one_number').innerHTML = score_1;
+            if (score_1 == 25){
+                Swal.fire('team A won..!!')
+            }
         })
         counter_2.addEventListener('click', function count (){
             score_2 = number_2++;
             console.log(score_2);
             document.querySelector('.team_two_number').innerHTML = score_2;
+            if (score_2 == 25){
+                Swal.fire('team B won..!!')
+            }
         })
     </script>
 </body>
